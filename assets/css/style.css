@@ -1,0 +1,523 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.all {
+    font-family: "Lato", sans-serif;
+}
+
+/* Common */
+.clear {
+    clear: both;
+}
+.text-while {
+    color: #fff;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/* tạo lớp giả thay class clear */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding: 0 8px; 
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.333333%;
+}
+.col-full {
+    width: 100%;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    border: none;
+}
+/*  */
+
+.header {
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+}
+
+.nav-content {
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+}
+.nav-content li{
+    /* display: inline-block; */
+    position: relative;
+}
+
+.nav-content > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-content li a {
+    /* color: #fff; */
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+.nav-content li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    list-style-type: none;
+}
+
+.nav-content .nav-icon-arrow-right {
+    font-size: 11px;
+}
+
+/* .nav-content li:hover {
+    background-color: #ccc;
+} */
+.nav-content .sub-menu li:hover,
+.nav-content > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+    display: block;
+    border-radius: 7px;
+}
+
+.nav-content .sub-menu {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+.nav-content .sub-menu a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.navbar .search {
+    color: #fff;
+    font-size: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 23px;
+}
+
+.navbar .search:hover {
+    background-color: red;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.slider {
+    padding-top: 50%;
+    z-index: 2;
+    transform: translateY(-9%);
+    background: url(https://afropop.org/client-uploads/img/_slideshow/Tikoubaouine-SLIDESHOW.jpg) no-repeat top center / cover;
+}
+
+.content {
+    padding-bottom: 100px;
+}
+
+.heading-content {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.text-content {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 768px;
+    padding: 0 0 64px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-main {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.section-content {
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.container-desc {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.container-author {
+    padding-top: 32px;
+    display: flex;
+    max-width: 768px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.container-author p {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.container-author img {
+    max-width: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.tours {
+    padding-top: 64px;
+    background: #000;
+}
+
+.tours-ticket {
+    max-width: 766px;
+    background: #fff;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tours-ticket li {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.tours-ticket .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+
+}
+
+.tours-ticket .count {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.tours .place {
+    max-width: 766px;
+    padding: 32px 0 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* thay bằng class row */
+/* .tours .place .place-list {
+    margin: 0 -8px ;
+} */
+
+/* .tours-place-items {
+    width: 33.333333%;
+    float: left;
+    padding: 0 8px;  
+} */
+
+.tours-place-items img {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+}
+
+.tours-place-items img:hover {
+    opacity: 0.7;
+}
+
+.tours .place-items-content {
+    font-size: 15px;
+    padding: 16px;
+    background: #fff;
+}
+
+.tours .place-items-content-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tours .place-items-content-time {
+    margin-bottom: 15px;
+    color: #757575;
+}
+
+.tours .place-items-content-desc {
+    line-height: 1.4;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* ấn mở hiện modal */
+.modal.open {
+    display: flex;
+}
+/*  */
+
+/* tạo ra chuyển động liên tiếp từ ảnh tĩnh */
+/* hiển thị modal từ trên xuống */
+@keyframes modalFadeIn {
+    from {
+        /* opacity là để từ từ hiện lên */
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% -400px); 
+    background: #fff;
+    position: relative;
+    animation: modalFadeIn ease .6s;
+}
+
+.modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    gap: 16px;
+}
+
+.modal-container > div > i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.modal-container > div > i:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.modal-buy-btn {
+    background: #009688;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 15px;
+    padding: 18px;
+}
+
+.modal-buy-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;    
+}
+
+.contact {
+    width: 768px;
+    margin: 64px 16px 112px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-container {
+    margin-top: 48px;
+}
+
+.contact-container-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* CSS nâng cao chọn thẻ i có tên ti-.... */
+/* .contact-container-info p i[clas*="ti-"] {
+     width: 30px;
+    display: inline-block; 
+} */
+
+.contact-container-info p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-container-form {
+    font-size: 15px;
+}
+
+.contact-container-form .form-control {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+.contact-container-form .form-submit {
+    /* background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px; */
+    float: right;
+}
+
+.contact-container-form .form-submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.map img {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.footer-list {
+    justify-content: center;
+    margin-top: 15px;
+    display: flex;
+    font-size: 24px;
+}
+
+.footer-list a {
+    color: #757575;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+.footer-list a i:hover {
+    opacity: 0.5;
+}
+
+.footer p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.footer p:hover a {
+    opacity: 0.5;
+}
