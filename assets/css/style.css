@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* font-family: "Lato", sans-serif; */
+}
 .all {
     font-family: "Lato", sans-serif;
 }
@@ -76,7 +80,7 @@
 .nav-content {
     display: flex;
     list-style-type: none;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 .nav-content li{
     /* display: inline-block; */
@@ -116,7 +120,7 @@
     color: #000;
     background-color: #ccc;
     display: block;
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 .nav-content .sub-menu {
@@ -127,7 +131,7 @@
     min-width: 160px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 .nav-content .sub-menu a {
@@ -153,14 +157,18 @@
 }
 
 .slider {
-    padding-top: 50%;
+    position: relative;
+    /* padding-top: 50%; */
     z-index: 2;
-    transform: translateY(-9%);
-    background: url(https://afropop.org/client-uploads/img/_slideshow/Tikoubaouine-SLIDESHOW.jpg) no-repeat top center / cover;
+    /* transform: translateY(-9%); */
+    /* background: url(https://afropop.org/client-uploads/img/_slideshow/Tikoubaouine-SLIDESHOW.jpg) no-repeat top / cover; */
 }
 
 .content {
+    width: 100%;
+    position: absolute;
     padding-bottom: 100px;
+    bottom: 0;
 }
 
 .heading-content {
@@ -177,10 +185,7 @@
 }
 
 .container {
-    max-width: 768px;
-    padding: 0 0 64px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 80px 0 64px;
 }
 
 .section-main {
@@ -199,6 +204,9 @@
 }
 
 .container-desc {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 15px;
     margin-bottom: 15px;
     text-align: justify;
@@ -233,7 +241,7 @@
 }
 
 .tours {
-    padding-top: 64px;
+    padding-top: 80px;
     background: #000;
 }
 
@@ -438,7 +446,8 @@
 
 .contact {
     width: 768px;
-    margin: 64px 16px 112px;
+    margin: 0 16px 112px;
+    padding-top: 80px;
     margin-left: auto;
     margin-right: auto;
 }
