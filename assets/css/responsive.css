@@ -1,0 +1,153 @@
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .nav-content .sub-menu a {
+        padding: 5px 40px;
+    }
+
+    .tours-place-items button {
+        padding: 15px 20px;
+    }
+
+    .contact-container-form .form-control {
+        padding: 16px;
+    }
+
+    .form-submit {
+        padding: 15px 30px;
+    }
+
+    .footer-list {
+        gap: 10px;
+    }
+
+    .footer a {
+        padding: 10px 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .slider {
+        transform: translateY(20%);
+    }
+
+    .heading-content {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    .navbar {
+        overflow: hidden;
+    }
+    
+    .nav-content {
+        display: block;
+    }
+
+    .nav-content li:nth-child(1) {
+        display: inline-block;
+    }
+
+    .nav-content li a{
+        width: 100%;
+        display: inline-block;
+        padding: 1px 24px;
+    }
+
+    .nav-content .sub-menu {
+        /* giá trị mặc định */
+        position: initial;
+        background: #333;
+    }
+
+    .nav-content .sub-menu a {
+        color: #fff;
+        padding: 5px 41px;
+        width: 100%;
+    }
+
+    .navbar .search {
+        display: none;
+    }
+
+    .search-mobile-btn {
+        display: block;
+    } 
+
+    .container-author {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .container-author p {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .container-author img {
+        max-width: 100%;
+        display: inline-block;
+        width: 60%;
+    }
+
+    .tours-place-items {
+        margin-top: 20px;
+        width: 100%;
+        float: none;
+    }
+
+    .tours-place-items button {
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .modal {
+        padding: 10px;
+    }
+
+    .contact {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .contact-container-info {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+
+    .contact-container-form {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .contact-container-form-name {
+        width: 100%;
+        float: none;
+    }
+
+    .contact-container-form-email {
+        margin-top: 8px;
+        width: 100%;
+    }
+
+    .contact-container-form .form-submit {
+
+        width: 100%;
+        padding: 15px 30px;
+    }
+    
+}
