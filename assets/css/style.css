@@ -58,6 +58,8 @@ html {
     text-decoration: none;
     padding: 11px 16px;
     border: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 /*  */
 
@@ -193,6 +195,7 @@ html {
     position: absolute;
     padding-bottom: 20px;
     bottom: 0;
+    text-shadow: 0 0 1px #000;
 }
 
 .heading-content {
@@ -420,6 +423,7 @@ html {
     padding: 12px;
     cursor: pointer;
     opacity: 0.85;
+    font-size: 25px;
 }
 
 .modal-container > div > i:hover {
